@@ -1,0 +1,29 @@
+-------------------------------
+Problemática:
+La compañía estadounidense American MegaDesign está realizando un nuevo modelo de muebles basados en los planos del famoso Diseñador industrial italiano Martín Vaccoto pero muchas piezas no han encajado correctamente debido a que los plano están en cms y las maquinarias americanas en pulgadas.
+-------------------------------
+
+-------------------------------
+Algoritmo:
+1. Solicitar al usuario la medida a convertir
+2. Realizar la conversión de cm a pulgadas
+3. Mostrar el resultado de la conversión al usuario
+-------------------------------
+
+-------------------------------
+Pseudocódigo:
+
+Inicio del programa
+
+    # Paso 1: Solicitar al usuario la medida a convertir
+    Mostrar mensaje: "Ingrese la medida que desea convertir:"
+    Definir medida_cms casteando a float el valor ingresado
+
+    # Paso 2: Realizar la conversión
+    medida_pulgada = medida_cms / 2.54
+
+    # Paso 2: Mstrarle el resultado al usuario
+    Mostrar: "La medida en pulgadas es:", medida_pulgada
+
+Fin del programa
+-------------------------------

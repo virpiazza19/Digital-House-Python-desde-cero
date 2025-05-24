@@ -27,7 +27,7 @@ else:
 # -------------------------------
 
 # -------------------------------
-# Código optimizado
+# Código V2
 
 edad = int(input("Por favor ingrese la edad del cliente: "))
 
@@ -38,7 +38,20 @@ else:
 # -------------------------------
 
 # -------------------------------
-# Código optimizado V2
+# Código V3
+
+if int(input("Por favor ingrese la edad del cliente: ")) >= 18:
+    print("¡Puedes ingresar a la discoteca!")
+else:
+    print("Lo sentimos mucho, pero no se puede ingresar a la discoteca siendo menor de edad.")
+# -------------------------------
+
+# -------------------------------
+# Código V4
+
+edad = int(input("Por favor ingrese la edad del cliente: "))
+
+permitido = True if edad >= 18 else False # ternario
 
 if int(input("Por favor ingrese la edad del cliente: ")) >= 18:
     print("¡Puedes ingresar a la discoteca!")

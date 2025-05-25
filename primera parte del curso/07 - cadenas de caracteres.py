@@ -2,7 +2,7 @@
 
 # ------------STRINGS------------
 
-string_comillas_simples = "Hola Mundo"
+string_comillas_simples = 'Hola Mundo'
 
 string_comillas_dobles = "Hola Mundo"
 

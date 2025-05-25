@@ -80,11 +80,11 @@ print(lista)
 
 # FOR
 
-frutas = ["Manzana", "Banana", "Pera", "Mandarina", "Frutilla", "Ananá"]
+"""frutas = ["Manzana", "Banana", "Pera", "Mandarina", "Frutilla", "Ananá"]"""
 
 """ bucle for abreviada """
 # abreviación del código standard
-# [print(fruta) for fruta in frutas] 
+# [print(fruta) for fruta in frutas]
 
 """ bucle for 'standard'"""
 # for fruta in frutas:
@@ -105,3 +105,98 @@ frutas = ["Manzana", "Banana", "Pera", "Mandarina", "Frutilla", "Ananá"]
 
 # -------------------------------
 # -------------------------------
+
+# COMPRENSIÓN DE LISTAS: ABREVIACIONES
+
+"""frutas = ["Manzana", "Banana", "Pera", "Mandarina", "Fresa", "Ananá"]"""
+# Modo tradicional
+"""
+frutas_con_e = []
+
+for fruta in frutas:
+    if "e" in fruta:
+        frutas_con_e.append(fruta)
+print(frutas_con_e)
+"""
+
+# Modo abreviado
+
+# lista        # dato      # bucle         # condición
+"""frutas_con_e = [fruta for fruta in frutas if "e" in fruta]"""
+
+# print(frutas_con_e)
+
+# lista      # dato      # condición con else              # bucle
+"""frutas_dos = [fruta if fruta != "Pera" else "Aguacate" for fruta in frutas]"""
+
+# print(frutas_dos)
+
+# -------------------------------
+# -------------------------------
+
+# ORDENAMIENTO DE LISTAS
+
+"""
+frutas = ["Manzana", "Banana", "Pera", "Mandarina", "Fresa", "Ananá"]
+frutas.sort()  # ordena en forma ascendente
+print(frutas)
+"""
+
+"""
+numeros = [9, 999, 88, 1, 2, 3, 4, 5, 2, 33, 4]
+# numeros.sort()  # ordena en forma ascendente
+numeros.sort(reverse=True) # ordena en forma ascendente
+print(numeros)
+"""
+"""
+frutas = ["Manzana", "Banana", "Pera", "Mandarina", "Fresa","pera", "Ananá","manzana"]
+frutas.sort()  # ordena en forma ascendente pero no toma ordena correctamente los elementos que comienzan en minúscula. Es case sensitive
+frutas.sort(key = str.lower) # ordena teniendo sin tener en cuenta si la primera letra es mayúscula o minúscula
+frutas.reverse() # ordena a la inversa el orden original, utiliza los índices del 7 al 0
+print(frutas)
+"""
+
+# -------------------------------
+# -------------------------------
+
+# COPIAR Y JUNTAR LISTAS
+
+'''
+# COPIAR
+frutas = ["Manzana", "Banana", "Pera", "Mandarina", "Fresa", "Ananá"]
+
+# -------------------
+copia_frutas = frutas.copy()
+
+print(copia_frutas)
+# -------------------
+copia_frutas_dos = list(frutas)
+
+print(copia_frutas_dos)
+# -------------------
+copia_frutas_tres = [fruta for fruta in frutas]
+
+print(copia_frutas_tres)
+# -------------------
+
+'''
+# JUNTAR
+frutas_uno = ["Manzana", "Banana", "Pera"]
+frutas_dos = ["Mandarina", "Fresa", "Ananá"]
+
+'''
+frutas = frutas_uno + frutas_dos
+print(frutas)
+
+frutas_uno.extend(frutas_dos)
+print(frutas_uno)
+'''
+# NO se recomienda porque puede realentizar la performance, además de que son demasiadas líneas de código
+'''
+frutas_tres = []
+
+for fruta in frutas_uno:
+    frutas_tres.append(fruta)
+for fruta in frutas_dos:
+    frutas_tres.append(fruta)
+print(frutas_tres)'''

@@ -4,7 +4,7 @@ class Personaje:
         self.salud = salud
 
     def identificarse(self):
-        print(f"¡Hola! Soy {self.nombre}")
+        print(f"¡Hola! Soy {self.nombre}.")
 
     def mostrar_salud(self):
-        print(f"{self.nombre} tiene {self.salud} puntos de salud")
+        print(f"{self.nombre} tiene {self.salud} puntos de salud.")

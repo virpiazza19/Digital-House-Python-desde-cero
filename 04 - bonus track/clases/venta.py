@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 
 class Venta:
@@ -13,7 +13,7 @@ class Venta:
     
     def registrar_venta(self):
         self.cliente.registrar_compra(self)
-        return f"Venta registrada: {self.mostrar_information()}"
+        return f"Venta registrada: {self.mostrar_informacion()}"
     
     def mostrar_informacion(self):
         productos = ", ".join(producto.nombre for producto in self.lista_de_productos)
